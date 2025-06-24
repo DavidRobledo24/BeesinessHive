@@ -1,0 +1,266 @@
+.contenedorBuscar{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tituloMarketplace{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar{
+    margin-right: 10px;
+    width: 60vw;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: #8D5604 solid;
+    background-color: #FFF8DF;
+    background-image: url("../../../assets/lupa.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding-left: 40px;
+}
+
+.buscar::placeholder{
+    font-weight: bold;
+    color: #c5b787;
+}
+
+.cancelar{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 17px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.botonAgregar{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    background-color: #388e3c;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.botonAgregarPC{
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: none;
+  font-size: 28px;
+}
+
+.botonAgregarMovil{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    float: right;
+    margin-right: 15px;
+    position: sticky;
+    bottom: 15px;
+    border: none;
+    font-size: 30px;
+    margin: 10px auto;
+    
+}
+
+.tituloMarketplace{
+    text-align: center;
+}
+
+.contenedorProducto{
+    background-color: #FCDE70;
+    display: flex;
+    margin: 10px 5vw;
+    border-radius: 10px;
+    overflow: auto;
+    position: relative;
+    width: 80%;
+}
+
+.infoProducto{
+    margin: 15px auto auto 10px;
+}
+
+.imagenProducto{
+    width: 150px;
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+
+.textoGrandeProducto{
+    font-size: 18px;
+}
+
+.detalleProductoAbajo{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.miniBoton{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+    margin-right: 4px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    margin: 0px 3px 8px 0px;
+}
+
+.contenedorMiniBotones{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    border: none;
+    margin: auto;
+
+}
+
+.contenedorTexto{
+    width: 280px;
+    word-wrap: break-word;
+}
+
+.textoPequenoProducto{
+    margin-top: 15px;
+}
+
+.botonAgregar:hover, .botonAgregarMovil:hover, .botonAgregarPC:hover, .miniBoton:hover, .cancelar:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    
+}
+
+@media (max-width: 800px){
+    .botonAgregarPC{
+        display: none;
+    }
+
+    .imagenProducto{
+        width: 130px;
+        height: 130px;
+        border-radius: 5px;
+        margin: auto 6px ;
+        
+    }
+
+    .textoGrandeProducto{
+        font-size: 14px;
+    }
+
+    .textoPequenoProducto{
+        font-size: 9px;
+    }
+
+    .miniBoton{
+        padding: 5px;
+        margin-right: 6px;
+        width: 30px;
+    }
+
+    .contenedorMiniBotones{
+        bottom: 0;
+        right: 0;
+        border: none;
+        margin: auto 6px;
+        
+    }
+
+    .contenedorTexto{
+        width: 150px;
+        margin: 0px 6px;
+    }
+
+    .botonAgregar{
+        margin-right: 37px;
+    
+
+    }
+
+}
+
+
+@media (min-width: 801px){
+    .botonAgregar{
+        margin-right: 60px;
+    }
+
+    .imagenProducto{
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        margin: auto 6px ;
+        
+    }
+
+    .miniBoton{
+        width: 38px;
+        height: 40px;
+        padding: 5px;
+        margin-right: 4px;
+    }
+   
+  
+  
+
+}
+
+@media (max-width: 620px) {
+
+        .contenedorProducto {
+            width: 250px;
+            height: 500px;
+            padding: 20px;
+            margin: 10px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .disponibles{
+            margin-bottom: 5px;
+        }
+    
+        .listaArticulos{
+            margin:0% 2%;
+            flex-wrap: wrap;
+            display: flex;
+        }
+    
+        .textoGrandeProducto{
+            font-size: 20px;
+        }
+        .textoPequenoProducto{
+            font-size: 12px;
+        }
+
+        .imagenProducto{
+            width: 180px;
+            height: 180px;
+        }
+        .miniBoton{
+            width: 45px;
+            height: 45px;
+            padding: 10px;
+            margin-right: 4px;
+
+        }
+        .contenedorMiniBotones{
+            margin: 20px 10px 10px;
+        }
+    }
+    

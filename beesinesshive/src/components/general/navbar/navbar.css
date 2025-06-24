@@ -1,0 +1,342 @@
+.navbar {
+    background-color: #FFBF1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 30px 20px 30px 5px;
+    position: relative;
+    z-index: 1001;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.content-perfil {
+    display: none !important;
+}
+
+.notifi {
+    width: 100%;
+    display: flex;
+}
+
+.notifi svg {
+    font-size: 25px;
+    display: inline-block !important;
+}
+
+.texto {
+    display: none;
+}
+
+.titulo img {
+    width: 35px;
+    height: 40px;
+}
+
+.icono {
+    display: none !important;
+}
+
+.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.titulo {
+    padding-left: 15px;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.titulo .beesiness {
+    color: black;
+}
+
+.titulo .hive {
+    color: white;
+}
+
+.links li {
+    padding: 20px;
+    padding-top: 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar .close-btn {
+    visibility: hidden;
+}
+
+/* Adaptacion responsive */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.logout {
+    display: none !important;
+}
+
+.logout-item {
+    margin-top: auto;
+    /* Pushes the button to the bottom of the sidebar */
+    text-align: center;
+}
+
+.logout-button, .opciones {
+    background: none;
+    border: none;
+    color: #000;
+    /* Adjust color as needed */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.opciones{
+    text-decoration: underline solid !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+}
+
+.perfil {
+    border-radius: 50px;
+    background-color: #f9d781;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.perfil svg {
+    font-size: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 90%;
+    right: -20px;
+    padding: 25px;
+    background-color: #f8ebb7;
+    min-width: 300px;
+    border-bottom-left-radius:20px ;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: -10;
+}
+
+.dropdown-content a,
+.dropdown-content Link {
+    color: black;
+    text-decoration: none;
+}
+
+.icono{
+    color: #000;
+}
+
+.dropdown-content p{
+    font-size: 18px;
+    color:#583603;
+    font-weight: bolder;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8ebb7;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logout-button svg {
+    margin-left: 8px;
+    /* Space between text and icon*/
+}
+
+.name{
+    color:#4D2500;
+    font-size: 20px;
+}
+
+.gmail{
+    color:#554211;
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+
+    .dropdown,
+    .dropdown-content {
+        display: none !important;
+    }
+
+    .texto,
+    .logout {
+        display: block !important;
+    }
+
+    .logout{
+        border-bottom: 0px !important;
+    }
+
+    .logout-button {
+        justify-content: left;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .icono {
+        display: inline-block !important;
+        margin-right: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+
+    .titulo img {
+        width: 30px;
+        height: 35px;
+    }
+
+    .links a {
+        font-size: 15px;
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo img {
+        width: 25px;
+        height: 30px;
+    }
+
+    .titulo h1 {
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #FFBF1A;
+        transition: right 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        z-index: 1001;
+        overflow-y: auto;
+    }
+
+    .sidebar.open {
+        right: 0;
+    }
+
+    .sidebar .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000;
+        visibility: visible;
+    }
+
+    .sidebar .links {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .sidebar li {
+        padding: 15px;
+        margin: auto;
+        width: 80%;
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: #000 solid 1px;
+        display: flex;
+        align-items: center;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        z-index: 999;
+    }
+
+    .overlay.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .content-perfil {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: left ;
+        align-items: left ;
+    }
+
+    .perfil {
+        background-color: #f9d781;
+        width: 70px;
+        height: 70px;
+    
+    }
+    
+    .perfil svg {
+        font-size: 80px;
+    }
+}
+
+

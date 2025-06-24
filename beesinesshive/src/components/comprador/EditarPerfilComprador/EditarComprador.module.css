@@ -1,0 +1,191 @@
+.contenedorIzquierdaComprador{
+    font-size: 18px;
+    text-align: center;
+    justify-content: left;
+    width: 25%;
+    background-color: #ffe9a2;
+    padding: 0px 30px 90px 40px;
+
+    
+}
+
+.imagenComprador{
+    text-align: center;
+    margin: 10px;
+}
+
+.imagenDosComprador{
+    display: none;
+}
+
+
+
+.datosComprador{
+      
+    margin: 30px;
+    margin-left: auto;
+  
+}
+
+.cajaComprador{
+    display: flex;
+
+}
+
+.titul2Comprador{
+    text-align: center;
+    font-size: 50px;
+    margin: 0px 60px 30px 20px;
+}
+
+.contenedorDerechaComprador{
+    width: 75%;
+    font-size: 18px;
+    text-align: justify;
+    padding: 25px 50px 70px 50px;
+   
+}
+
+
+
+
+.btnsDatosPerfilComprador{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+} 
+
+
+
+.btnUpdateComprador{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #106405;
+    color: aliceblue;
+    font-size: 20px;
+    border: none;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    margin: 30px 10px 20px;
+    cursor: pointer;
+}
+.btnCancelarComprador{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 200px;
+    margin: 30px 10px 20px ;
+    display: flex;
+    background-color: #000000;
+    color: aliceblue;
+    border: none;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+.btnUpdateComprador:hover, .btnCancelarComprador:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    
+}
+
+@media (max-width:450px){
+
+    
+    .btnUpdateComprador{
+
+        width: 150px;
+        margin: 30px 10px 20px;
+        padding: 15px 30px;
+        
+    }
+    .btnCancelarComprador{
+        width: 150px;
+        margin: 30px 10px 20px ;
+        padding: 15px 30px;
+        
+    }
+
+
+  
+}
+@media (max-width: 800px){
+    .contenedorIzquierdaComprador{
+     width: 70%;
+     height: 50%;
+     display: none;
+  
+    }
+
+    .titul2Comprador{
+        font-size: 45px;
+        margin: auto;
+    }
+
+ 
+
+    .contenedorDerechaComprador{
+        width: 100%;
+        text-align: center;
+        padding: 50px 30px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+    .imagenDosComprador{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    }
+
+
+    .EditarDatosComprador{
+        width: 100%;
+        
+    }
+  
+    
+}
+
+
+@media (min-width: 801px){
+    .contenedorIzquierdaComprador{
+        text-align: center;
+         width: 50%;
+         height: 50%;
+        }
+     
+    
+        .contenedorDerechaComprador{
+            width: 100%;
+            
+        } 
+
+        .btnsDatosPerfilComprador{
+            margin: 30px ;
+        }
+
+
+        .btnCancelarComprador{
+            margin: 10px;
+
+        }
+
+        .btnUpdateComprador{
+            margin: 10px;
+        }
+
+}

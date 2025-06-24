@@ -1,0 +1,139 @@
+
+.regreso{
+    font-size: 40px;
+    color:white;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    display: block;
+    margin: 20px 8% 0%;
+    text-decoration: none;
+}
+.chat_container {
+    display: flex;
+    flex-direction: column;
+    height: 93vh;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f8ebb7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+    
+
+.message {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    border:3px solid #855a1da0;
+}
+
+.message.comprador {
+    background-color: #f9eacf;
+    align-self: flex-end;
+}
+
+.message.vendedor {
+    background-color: #f2cf8e;
+    align-self: flex-start;
+}
+
+.input_container {
+    display: flex;
+    padding: 20px 5px;
+    align-items: center;
+}
+
+.input_container input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.principalchat {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bolder;
+    width: 50%;
+}
+
+.titulochat {
+    padding: 10px 25px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    color: white;
+}
+
+.user {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.bot {
+    background-color: #fff2b2;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.input_container button.send {
+    padding: 10px 20px;
+    border: 3px solid #8d5604;
+    background-color: #fef8e1;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input_container button.send svg{
+    font-Size:35px;
+}
+
+
+@media (max-width:576px){
+    .input_container button.send {
+        height: 50px;
+        width: 40px;
+    }
+    .input_container button.send svg{
+        font-Size:25px;
+    }
+}

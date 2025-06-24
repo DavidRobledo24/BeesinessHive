@@ -1,0 +1,50 @@
+
+.container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+    background: url('../../../assets/honeycomb.jpg') repeat; /* Puedes reemplazar 'galaxy.jpg' con la imagen que prefieras */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.errorCode {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+@media (max-width:700px) {
+    
+.container {
+    margin:10%;
+}
+}

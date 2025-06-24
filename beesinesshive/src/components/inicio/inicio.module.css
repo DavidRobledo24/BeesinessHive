@@ -1,0 +1,201 @@
+.login, .signUpProductor, .signUpComprador, .cambiarContraseña, .revisarCorreo , .restablecerContraseña{
+    padding: 8% 10%;
+}
+.login h2, .signUpProductor h2, .signUpComprador h2, .cambiarContraseña h2, .revisarCorreo h2, .restablecerContraseña h2{
+    font-size: 32px;
+}
+.login h2 span{
+    color: #E08F17;
+}
+.revisarCorreo p span{
+    font-weight: bolder;
+    color: #8D5604;
+}
+
+.regreso{
+    font-size: 25px;
+    color:#8D5604;
+    font-weight: bolder;
+    padding-bottom: 50px;
+    display: block;
+}
+
+.box input, .box select, .box textarea{
+    border: none;
+    -o-border:none;
+    background-color: #FFF8DF;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.box select{
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #FFF8DF;
+    margin: 10px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: solid #8D5604 3px;
+    display: flex;
+    align-items: center;
+}
+.box .icon{
+    margin-right: 7px;
+}
+
+.login form, .signUpProductor form, .signUpComprador form,  .cambiarContraseña form, .revisarCorreo form, .restablecerContraseña form{
+    text-align: center;
+    padding: 2% 3%;
+}
+
+.checkBox input{
+    margin-right: 15px;
+}
+
+.checkBox{
+    text-align: justify;
+    padding: 2% 5%;
+    font-size: 14px;
+}
+
+.btnPrincipal{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15% 0% 2%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.btnPrincipal:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.cambiarContraseña form button,.revisarCorreo form button{
+    margin-top: 50%;
+}
+
+.forget, .signUp{
+    text-align: center;
+}
+
+.forget a, .signUp a, .checkBox label a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.forget{
+    height: 150px;
+}
+
+@media (min-width:576px){
+    .btnPrincipal{
+        width: 90%;
+        font-size: 16px;
+        margin: 5% 0% 2%;
+    }
+    .cambiarContraseña form button,.revisarCorreo form button{
+        margin-top: 200px;
+    }
+    .box{
+        margin: 15px;
+    }
+    .box input, .checkBox, .forget, .signUp{
+        font-size: 17px;
+    }
+    .login h2, .signUpProductor h2, .signUpComprador h2, .cambiarContraseña h2, .revisarCorreo h2, .restablecerContraseña h2{
+        font-size: 40px;
+    }
+    .checkBox input{
+        transform: scale(1.5);
+    }
+}
+@media (min-width:768px){
+    .login{
+        padding: 3% 20%;
+    }
+    .btnPrincipal{
+        width: 80%;
+    }
+    .cambiarContraseña form button,.revisarCorreo form button{
+        margin-top: 200px;
+    }
+}
+@media (min-width:968px){
+    .restablecerContraseña{
+        padding: 8% 20%;
+    }
+    .login h2, .signUpProductor h2, .signUpComprador h2, .cambiarContraseña h2, .revisarCorreo h2, .restablecerContraseña h2{
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    .login, .cambiarContraseña {
+        padding: 3% 25%;
+        width: 95%;
+        margin: auto;
+    }
+    .signUpProductor, .signUpComprador{
+        padding: 3% 18%;
+        width: 95%;
+        margin: auto;
+    }
+    .box{
+        padding: 8px 10px;
+    }
+    .signUpProductor form, .signUpComprador form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box input, .box select{
+        padding: 2px 0px;
+    }
+    .checkBox{
+        grid-column: span 2;
+    }
+    .signUpProductor form button, .signUpComprador form button{
+        grid-column: span 2;
+        margin: 30px auto;
+        width: 50%;
+    }
+    .cambiarContraseña form button,.revisarCorreo form button{
+        margin-top: 200px;
+    }
+    
+}
+
+.btnP{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 0px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+
+.btnPrincipal:hover , .btnP:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}

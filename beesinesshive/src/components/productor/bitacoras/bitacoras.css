@@ -1,0 +1,159 @@
+.pageBitacora .titulo{
+    font-size: 40px;
+}
+
+#startButton{
+    border: none !important;
+    color: white !important;
+    background: black !important;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#startButton:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+#startButton svg{
+    font-size: 30px;
+}
+
+.bitacora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btnsBitacora{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.pageBitacora{
+    padding: 8% 10%;
+}
+.actividades{
+    border-left: solid 3px #733700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.calendario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    margin: 40px 0px;
+}
+.registroActividad{
+    padding: 0;
+    width: 100%;
+}
+
+.btnPull{
+    border-radius: 15px;
+    width: 100%;
+    text-align: justify;
+    padding: 15px 0px 15px 50px;
+    font-size: large;
+}
+.btnRegistro{
+    display: none;
+}
+.btnBorrar, .btnGuardar{
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 30px 15px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnBorrar{
+    background-color: #DB1D1D;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btnBorrar:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.btnGuardar{
+    background-color: #3E9229;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btnGuardar:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.errorMensaje{
+    color: #DB1D1D;
+}
+
+@media  screen and (max-width:900px) {
+    .btnRegistro{
+        display: block;
+    }
+    .actividades{
+        border-left: none;
+    }
+
+    .bitacora{
+        display: flex;
+        flex-direction: column;
+    }
+    #startButton{
+        border: none !important;
+        color: white !important;
+        background: black !important;
+        padding: 10px 40px;
+        border-radius: 20px;
+        margin: 15px;
+    }
+    
+    #startButton svg{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .btnBorrar, .btnGuardar{
+        margin: 10px 15px;
+    }
+    .calendario{
+        margin: 40px 15px;
+    }
+    .registroActividad{
+        padding: 0;
+        width: 110%;
+    }
+    .pageBitacora .titulo{
+        font-size: 30px;
+    }
+    .pageBitacora p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .registroActividad{
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media  screen and (min-width:900px) {
+    .registroActividad{
+        padding: 0;
+        width: 80%;
+    }
+}

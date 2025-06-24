@@ -1,0 +1,97 @@
+.titulo{
+    margin: 0px;
+}
+
+.containerTitle{
+    margin-bottom: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 8%;
+    margin-bottom: 250px;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.imageColmena {
+    background-color: #FFBF1A;
+    border-radius: 20px;
+    width: 170px;
+    height: 170px;
+    margin: 0px !important;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.containerHive {
+    background-color: #FFBF1A;
+    width: 180px;
+    height: 200px;
+    padding: 10px 15px;
+    text-align: center;
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.containerHive:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.image {
+    margin-top: 5px;
+    width: 120px;
+}
+
+.texto {
+    margin-top: 0px;
+    font-size: 1rem;
+}
+
+.hive {
+    background-image: url("../../../assets/colmena.png");
+}
+
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .containerTitle{
+        margin-bottom: 35px;
+    }
+
+    .containerAll {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 5% 2%;
+    }
+
+}

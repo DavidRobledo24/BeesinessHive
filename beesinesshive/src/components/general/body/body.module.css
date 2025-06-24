@@ -1,0 +1,377 @@
+.contenedorGeneral {
+    margin: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.contenedorInicio {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.contendorBienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.fotoTemporal {
+    width: 250px;
+    height: 250px;
+    border-radius:50% ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 10px 20px;
+}
+
+.bienvenidaTitulo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #6c6b6b;
+    margin-bottom: 0;
+}
+
+.tituloMarca {
+    font-size: 60px;
+}
+
+.beesiness {
+    color: #000;
+    margin-left: 15px;
+    font-size: 32px;
+}
+
+.hive {
+    color: #E08F17;
+    margin-right: 15px;
+    font-size: 32px;
+}
+
+.beesinessb {
+    color: #000;
+    margin-left: 15px;
+    font-size: 45px;
+}
+
+.hiveb {
+    color: #E08F17;
+    margin-right: 15px;
+    font-size: 45px;
+}
+
+.slogan {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+.imagenPrincipal {
+    width: 700px;
+}
+
+.imagenPrincipal img{
+    margin-left: 100px;
+}
+
+.btnIniciar {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #FFBF1A;
+    color: #2a2929;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.btnIniciar:hover {
+    background-color: #2a2929;
+    color: #FFBF1A;
+}
+
+.contQueEs {
+    margin-top: 100px;
+    margin: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.tituloQueEs {
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #3d3c3c;
+}
+
+p {
+    font-size: 22px;
+}
+
+.contObjetivos {
+    margin-top: 100px;
+    margin: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.tituloObjetivo {
+    font-size: 40px;
+    margin: 25px;
+    color: #3d3c3c;
+    text-align: center;
+    max-width: 100%;
+}
+
+.contenedorGrupoTrabajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin: 5% 15%;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.titutoGrupoTrabajo {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #3d3c3c;
+}
+
+.miembrosTrabajo {
+    display: flex;
+    margin: 15px 0px;
+    align-items: center;
+}
+
+.nombreMiembro {
+    font-size: 25px;
+}
+.links{
+    text-decoration: none;
+    color: #966112;
+}
+/* Adaptación responsive */
+@media (max-width: 720px) {
+    .abejaPrincipal {
+        display: none;
+    }
+
+    .contenedorInicio {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contendorBienvenida {
+        order: 1;
+        margin-top: 0;
+        width: auto;
+    }
+
+    .imagenPrincipal {
+        order: 2;
+        width: 700px;
+    }
+
+    .bienvenidaTitulo {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .tituloMarca {
+        font-size: 50px;
+    }
+
+    .tituloQueEs {
+        font-size: 30px;
+    }
+
+    .tituloObjetivo {
+        font-size: 30px;
+    }
+
+    .titutoGrupoTrabajo {
+        font-size: 30px;
+    }
+    
+    .contObjetivos {
+        width: auto;
+    }
+
+    .contQueEs {
+        margin-top: 100px;
+        margin: 5%;
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow: hidden;
+    }
+    
+    
+}
+
+@media (min-width: 721px) {
+    .abejaPrincipal {
+        width: 450px;
+        height: auto;
+    }
+
+    .bienvenidaTitulo {
+        font-size: 30px;
+    }
+
+    .tituloMarca {
+        font-size: 40px;
+    }
+    
+    .slogan {
+        font-size: 20px;
+        text-align: center;
+    }
+    .contendorBienvenida {
+        left: -15%;
+     }
+
+     .beesiness {
+        color: #000;
+        margin-left: 15px;
+        font-size: 40px;
+    }
+    
+    .hive {
+        color: #E08F17;
+        margin-right: 15px;
+        font-size: 40px;
+    }
+    
+    .beesinessb {
+        color: #000;
+        margin-left: 15px;
+        font-size: 45px;
+    }
+    
+    .hiveb {
+        color: #E08F17;
+        margin-right: 15px;
+        font-size: 45px;
+    }
+}
+@media (max-width: 820px) {
+    .contendorBienvenida {
+        margin-top: 60px;
+    }
+    .abejaPrincipal {
+        width: 550px;
+        height: auto;
+    }
+    .miembrosTrabajo{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .miembrosTrabajo:nth-child(5), .miembrosTrabajo:last-child,.miembrosTrabajo:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    .descripcion, .nombreMiembro, .titutoGrupoTrabajo{
+        text-align: center;
+        width: 250px;
+    }
+    .fotoTemporal{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 820px) {
+    .abejaPrincipal {
+        width: 550px;
+        height: auto;
+    }
+    .slogan {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .beesiness {
+        font-size: 45px;
+    }
+    
+    .hive {
+        font-size: 45px;
+    }
+
+    .beesinessb {
+        font-size: 55px;
+    }
+    
+    .hiveb {
+        font-size: 55px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .bienvenidaTitulo {
+        font-size: 60px;
+    }
+
+    .beesiness {
+        font-size: 44px;
+    }
+    
+    .hive {
+        font-size: 44px;
+    }
+
+    .beesinessb {
+        font-size: 55px;
+    }
+    
+    .hiveb {
+        font-size: 55px;
+    }
+
+    .tituloMarca {
+        font-size: 80px;
+    }
+
+    .btnIniciar {
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: #FFBF1A;
+        color: #2a2929;
+        font-weight: bold;
+        border: none;
+        box-shadow: 10px 7px 16px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .contQueEs {
+        margin-top: 100px;
+        margin: 5%;
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow: hidden;
+    }
+    .contendorBienvenida {
+        left: -5%;
+     }
+}

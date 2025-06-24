@@ -1,0 +1,119 @@
+.grupoBtns{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+.fechaContenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.fecha{
+    margin: 10px 15px;
+    color: #4A4A4A;
+    font-weight: 400;
+}
+
+.contenedorProducto{
+    background-color: #FBEAB0;
+    display: grid;
+    border-radius: 10px;
+    position: relative;
+    grid-template-columns: 5fr 1fr;
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+.infoProducto{
+    margin: 20px;
+}
+
+.infoProducto p{
+    font-size: 17px;
+}
+
+.container{
+    padding: 5% 10%;
+}
+
+.container h2{
+    font-size: 32px;
+}
+
+.btn1{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.btn1:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.btn2{
+    color: black;
+    cursor: pointer;
+    background-color: #f7ce62;
+    border: none;
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.btn2:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+.btnPrincipal{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px ;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+@media (max-width:800px){
+    .btn1, .btn2{
+        width: 40%;
+    }
+    .contenedorProducto{
+        width: 100%;
+        
+    }
+    .infoProducto p{
+        font-size: 18px;
+    }
+    .btnPrincipal{
+        width: 110px;
+        font-size: 13px;
+    }
+}

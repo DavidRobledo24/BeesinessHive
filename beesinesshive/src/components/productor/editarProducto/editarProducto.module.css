@@ -1,0 +1,58 @@
+.buttonSave {
+    background-color: #3E9229;
+    border: #3E9229;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px !important;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buttonDelete {
+    background-color: #DB1D1D;
+    border: #DB1D1D;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px !important;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container_btn_edit {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .container_btn_edit {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .buttonSave {
+        background-color: #3E9229;
+        border: #3E9229;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px !important;
+        border-radius: 50px;
+        width: 100px;
+    }
+
+    .buttonDelete {
+        background-color: #DB1D1D;
+        border: #DB1D1D;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px !important;
+        border-radius: 50px;
+        width: 100px;
+    }
+}
+
+@media (min-width:769px) {
+    .container_btn_edit {
+        width: 400px;
+        justify-content: space-around;
+    }
+
+}

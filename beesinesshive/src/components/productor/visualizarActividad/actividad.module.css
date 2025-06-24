@@ -1,0 +1,28 @@
+.container{
+    padding: 5% 10%;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentInfo{
+    background-color: #f8ebb7;
+    padding: 80px 80px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.contentInfo h3{
+    margin: 20px 0px;
+}
+
+@media (max-width:800px){
+    .contentInfo{
+        width: 100%;
+    }
+}

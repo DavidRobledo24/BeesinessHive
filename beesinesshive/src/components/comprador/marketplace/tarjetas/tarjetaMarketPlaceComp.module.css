@@ -1,0 +1,248 @@
+.contenedorGeneral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fecd3f;
+    border-radius: 15px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    gap: 15px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.listaArticulos{
+    margin:0% 5%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.contImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contImage figure{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.277);
+    cursor: pointer;
+}
+
+.imgItem {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1fc7;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contImage figure:hover >.capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contImage figure:hover >.capa h3{
+    margin: 40% 0%;
+}
+
+.contImage figure .capa h3{
+    color: white;
+}
+
+.contInfo {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 10px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    max-width: 100%; 
+}
+
+.nombreProducto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    margin: 5px 0;
+  }
+
+.vendedor {
+    font-size: 0.85rem;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+.contValores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contBotones {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 10px; /*para modificar la distancia entre los botones*/
+    padding-bottom: 60px; /* para ajustar la alltura de los botones */
+}
+
+.btnTarjeta {
+    width: 35px;
+    height: 35px;
+    background-color: #e0d194;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.btnTarjeta:hover {
+    transform: scale(1.1);
+}
+
+.btnTarjeta img {
+    width:85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.barraBusquedaContenedor {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+    padding-right: 50px;
+  }
+  
+
+@media (max-width: 768px) {
+  .contenedorGeneral {
+    width: calc(100% - 30px);
+    padding: 20px;
+}
+
+.contImage figure .capa h3{
+    font-size: 18px;
+}
+
+    .nombreProducto {
+        font-size: 1.1rem;
+    }
+
+    .descripcion {
+        font-size: 0.9rem;
+    }
+
+    .vendedor {
+        font-size: 0.75rem;
+    }
+
+    .contValores {
+        gap: 10px;
+    }
+
+    .disponibles{
+      font-size:20px;
+    }
+
+    .unidades{
+      font-size: larger;
+    }
+
+    .precio{
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+.barraBusquedaContenedor {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+    .contenedorGeneral {
+        width: 250px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .disponibles{
+        margin-bottom: 5px;
+    }
+
+    .listaArticulos{
+        margin:0% 2%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .nombreProducto {
+        font-size: 20px; 
+    }
+
+    .disponibles{
+        font-size:15px;
+    }
+  
+    .precio{
+        font-size: 25px;
+      }
+
+    .descripcion {
+        font-size: 18px;
+    }
+
+    .vendedor {
+        font-size: 1rem;
+    }
+
+    .contValores {
+        flex-direction: column;
+        text-align: center;
+        gap:5;
+    }
+
+    .contBotones{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .btnTarjeta {
+        width: 40px;
+        height: 40px;
+    }
+    .contImage figure{
+        width: 180px;
+        height: 180px;
+    }
+}
